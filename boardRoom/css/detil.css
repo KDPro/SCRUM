@@ -1,0 +1,22 @@
+
+.userList>li:nth-of-type(1),.userList-title span{
+    color: #0a6999 !important;
+}
+
+.userList>li:not(:first-child){
+    height:70px;
+    line-height:25px;
+    padding:10px;
+}
+.userList>li>span:nth-of-type(1){
+    float: left;
+}
+.userList>li>span:nth-of-type(2):not(.userList-title){
+    float: right;
+    color: red;
+}
+.vote {
+    padding-top:20px;
+}
+
+

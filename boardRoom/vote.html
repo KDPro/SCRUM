@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/vote.css">
+</head>
+<body>
+<!--底部导航-->
+<nav>
+    <ul class="footerNav">
+        <li>
+            <a href="index.html">
+                <img src="images/indexA.png" alt="">
+                <span style="color:#0a6dca">首页</span>
+            </a>
+        </li>
+        <li id="person">
+            <a href="javascript:;">
+                <img src="images/user.png" alt="">
+                <span>人员</span>
+            </a>
+        </li>
+        <li id="project">
+            <a href="javascript:;">
+                <img src="images/pj.png" alt="">
+                <span>项目</span>
+            </a>
+        </li>
+        <li id="work">
+            <a href="javascript:;">
+                <img src="images/TV.png" alt="">
+                <span>会议室</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!--头部按钮-->
+<div class="topButton">
+    <div class="right"> <</div>
+    <div class="topButton-btn rfloat">
+        <button class="topbutton">评估投票</button>
+        <button class="topbutton">工时确认</button>
+    </div>
+</div>
+
+<!--正文-->
+<div class="topTitle">
+    <div class="lfloat">
+        <p>办公室三/任务列表</p>
+        <p>关于UI设计的工时评估</p>
+    </div>
+    <div class="right">
+        平均工时： <span> ..</span>
+    </div>
+</div>
+
+<!--下面列表-->
+<ul class="userList">
+    <li class="pgtitle">
+        <span>评估人</span>
+        <span>评估工时</span>
+    </li>
+</ul>
+
+<!--隐藏的评估投票的模态框-->
+<!--遮罩层-->
+<div class="opcaty">
+    <div class="vote">
+        <p class="vote-title">评估投票</p>
+        <p>评估工作量：<input type="number" placeholder="请输入工作量工时" id="worktime"></p>
+        <p><button class="buttonS">确定</button><button class="rfloat buttonB">取消</button></p>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/serverPath.js"></script>
+<script src="js/vote.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

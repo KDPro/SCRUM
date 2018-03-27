@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/detil.css">
+</head>
+<body>
+
+<!--底部导航-->
+<nav>
+    <ul class="footerNav">
+        <li>
+            <a href="index.html">
+                <img src="images/indexA.png" alt="">
+                <span style="color:#0a6dca">首页</span>
+            </a>
+        </li>
+        <li id="person">
+            <a href="javascript:;">
+                <img src="images/user.png" alt="">
+                <span>人员</span>
+            </a>
+        </li>
+        <li id="project">
+            <a href="javascript:;">
+                <img src="images/pj.png" alt="">
+                <span>项目</span>
+            </a>
+        </li>
+        <li id="work">
+            <a href="javascript:;">
+                <img src="images/TV.png" alt="">
+                <span>会议室</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!--头部按钮-->
+<div class="topButton">
+    <div class="right"> <</div>
+    <div class="topButton-btn rfloat">
+        <button class="topbutton rfloat" id="creattt">创建任务</button>
+    </div>
+</div>
+
+<p> <span class="hystitle"></span><span>/任务列表</span></p>
+<!--下面列表-->
+<ul class="userList">
+    <li class="userList-title">
+        <span>任务号</span>
+        <span>确认工时</span>
+    </li>
+</ul>
+
+
+<!--隐藏的创建任务的模态框-->
+<!--遮罩层-->
+<div class="opcaty">
+    <div class="vote" id="opcaVote">
+        <p class="vote-title"></p>
+        <p id="workId">任务编号<span class="heart">*</span>：<input type="text" placeholder="请输入任务编号" id="workIdval"></p>
+        <p>任务名称 ：<input type="text" placeholder="请输入任务名称" id="workname"></p>
+        <p><button class="buttonS">确定</button><button class="rfloat buttonB">取消</button></p>
+    </div>
+</div>
+
+<!--显示导航条空白Div-->
+<div class="noneBox"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/serverPath.js"></script>
+<script src="js/detil.js"></script>
+<script src="js/login.js"></script>
+
+
+</body>
+</html>

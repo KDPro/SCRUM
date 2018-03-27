@@ -1,0 +1,232 @@
+
+/*公共样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color:#333;
+    text-decoration: none;
+}
+body,html{
+    height:100%;
+    background-color: rgb(239,244,250);
+}
+.lfloat{
+    float: left;
+}
+.rfloat{
+    float: right;
+}
+.clear:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+input {
+    outline: none;
+    border:1px solid #d4cfcf;
+    text-indent: 10px;
+}
+button {
+    outline: none;
+    border:none;
+}
+textarea {
+    outline: none;
+    border:none;
+}
+
+/*头部公用样式*/
+.topButton{
+    width: 100%;
+    height:50px;
+    background-color:#343434 ;
+}
+.topButton>p{
+    color: white;
+    font-size:16px;
+    margin-left:15px;
+    line-height: 50px;
+}
+/*头部返回按钮*/
+.topButton>.right{
+    font-size:26px;
+    font-weight: bold;
+    color: white;
+    line-height: 50px;
+    margin-left:15px;
+    width:50px;
+    display: inline-block;
+}
+.topButton .topButton-btn {
+    /*width:75%;*/
+}
+.topButton .topButton-btn .topbutton {
+    display: inline-block;
+    border-radius:30px;
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    background-color: white;
+    color: rgb(119,166,211);
+    margin-top:10px;
+    margin-right:15px;
+    text-align: center;
+    font-size: 14px;
+}
+/*头部下面小标题*/
+.topButton+p{
+    text-align: center;
+    font-size: 16px;
+    padding:10px 0;
+}
+
+/*下面列表排列*/
+.userList{
+    padding:0 15px;
+    height:calc(100% - 145px);
+    overflow: auto;
+}
+.userList>li{
+    margin-top:1%;
+    height:40px;
+    line-height:40px;
+    border-radius:5px;
+    background-color: white;
+    box-sizing: border-box;
+    padding:0 10px;
+    font-size:14px;
+    color:#666;
+}
+.userList>li>span:nth-of-type(2){
+    float: right;
+}
+
+/*遮罩层*/
+.opcaty{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    display: none;
+    z-index:30;
+}
+
+/*<!--隐藏的评估投票的模态框-->*/
+.vote{
+    left:15px;
+    right:15px;
+    border-radius:8px;
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top:50%;
+    z-index: 2;
+    font-size:14px;
+    color:#666;
+    padding-bottom:20px;
+}
+.vote .vote-title{
+    color: rgb(119,166,211);
+    text-align: center;
+    margin-top:5%;
+}
+
+.vote .vote-title+p,.vote .vote-title+p+p{
+    width: 80%;
+    margin:15px auto;
+}
+.vote .vote-title+p+p>button{
+    display: inline-block;
+    border-radius:30px;
+    width:100px;
+    height:30px;
+}
+.vote .vote-title+p+p>button:nth-of-type(2){
+    float: right;
+}
+.vote p:last-child{
+    width:80%;
+    margin:0 auto;
+}
+.vote input{
+    border-radius:30px;
+    width:60%;
+    height:30px;
+    text-indent: 10px;
+}
+
+
+
+.heart{
+    color: red;
+}
+
+
+/*button 公共样式*/
+.buttonS{
+    display: inline-block;
+    border-radius:30px;
+    width:100px;
+    height:30px;
+    color: white;
+    background-color: rgb(23,119,219);
+}
+.buttonB{
+    display: inline-block;
+    border-radius:30px;
+    width: 100px;
+    height:30px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid rgb(119,166,211);
+}
+.topbutton{
+    display: inline-block;
+    border-radius:70px;
+    width: 43%;
+    height:90px;
+    background-color: white;
+    color: rgb(119,166,211);
+}
+
+
+
+
+/*底部导航*/
+ul.footerNav{
+    height:50px;
+    background-color: white;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    display: flex;
+    box-shadow:0 0  10px 6px #aaa;
+    justify-content:space-around;
+}
+
+ul.footerNav>li{
+    margin-top:7px;
+}
+ul.footerNav>li>a{
+    width:50px;
+    font-size:12px;
+    text-align: center;
+    display: inline-block;
+    /*border: 1px solid red;*/
+}
+ul.footerNav>li>a>span{
+    display: block;
+}
+ul.footerNav>li>a>img {
+    height:20px;
+}

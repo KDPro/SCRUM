@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<!--头部按钮-->
+<div class="topButton">
+    <p>scrum评估会议工作</p>
+</div>
+
+<!--隐藏的登录验证的模态框-->
+<div class="opcaty" id="loginBox">
+    <div class="vote">
+        <p class="vote-title">登录</p>
+        <table>
+            <tr>
+                <td align="right">用户名 <span class="heart">*</span>：</td>
+                <td><input type="text" placeholder="请输入用户名" id="usernamew"></td>
+            </tr>
+            <tr id="addPerson-pass" style="margin: 10%">
+                <td align="right">密码 <span class="heart">*</span>：</td>
+                <td><input type="password" placeholder="请输入密码" id="pass"></td>
+            </tr>
+
+        </table>
+        <p id="login-btn">
+            <button class="buttonS">登录</button>
+            <button class="buttonB" id="changepass">修改密码</button>
+            <button class="rfloat buttonB">返回</button>
+        </p>
+
+    </div>
+</div>
+
+
+<!--修改密码-->
+<div class="opcaty" id="creatVote">
+    <div class="vote creatVote">
+        <p class="vote-title">修改密码</p>
+        <table id="addPerson">
+            <tr>
+                <td align="right">用户名：</td>
+                <td><input type="text" placeholder="请输入用户名" id="username"></td>
+            </tr>
+            <tr>
+                <td align="right">原密码：</td>
+                <td><input type="password" placeholder="请输入原密码" id="boardpass"></td>
+            </tr>
+            <tr>
+                <td align="right">新密码 ：</td>
+                <td><input type="password" id="datel" placeholder="请输入新密码"></td>
+            </tr>
+            <tr>
+                <td align="right">确认新密码：</td>
+                <td><input type="password" placeholder="请确认新密码" id="peonum"></td>
+            </tr>
+
+        </table>
+        <p id="creatVote-btn"><button class="buttonS">确定</button><button class="rfloat buttonB">返回</button></p>
+    </div>
+</div>
+
+
+<!--遮罩层-->
+
+<!--底部导航-->
+<nav>
+    <ul class="footerNav">
+        <li>
+            <a href="index.html">
+                <img src="images/indexA.png" alt="">
+                <span style="color:#0a6dca">首页</span>
+            </a>
+        </li>
+        <li id="person">
+            <a href="javascript:;">
+                <img src="images/user.png" alt="">
+                <span>人员</span>
+            </a>
+        </li>
+        <li id="project">
+            <a href="javascript:;">
+                <img src="images/pj.png" alt="">
+                <span>项目</span>
+            </a>
+        </li>
+        <li id="work">
+            <a href="javascript:;">
+                <img src="images/TV.png" alt="">
+                <span>会议室</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/serverPath.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

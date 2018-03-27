@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--底部导航-->
+<nav>
+    <ul class="footerNav">
+        <li>
+            <a href="index.html">
+                <img src="images/indexA.png" alt="">
+                <span style="color:#0a6dca">首页</span>
+            </a>
+        </li>
+        <li id="person">
+            <a href="javascript:;">
+                <img src="images/user.png" alt="">
+                <span>人员</span>
+            </a>
+        </li>
+        <li id="project">
+            <a href="javascript:;">
+                <img src="images/pj.png" alt="">
+                <span>项目</span>
+            </a>
+        </li>
+        <li id="work">
+            <a href="javascript:;">
+                <img src="images/TV.png" alt="">
+                <span>会议室</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!--头部按钮-->
+<div class="topButton">
+    <p>scrum评估会议工作</p>
+</div>
+
+<p> 会议室列表</p>
+<!--下面列表-->
+<ul class="userList">
+</ul>
+
+
+<!--隐藏的评估投票的会议室密令模态框-->
+<!--遮罩层-->
+<div class="opcaty">
+    <div class="vote" id="opcaVotep">
+        <p class="vote-title">会议室登录</p>
+        <p id="home">会议室: <span></span></p>
+        <p>会议室口令：<input type="text" placeholder="请输入会议室口令"></p>
+        <p><button class="buttonS">登录</button><button class="rfloat buttonB">返回</button></p>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/serverPath.js"></script>
+<script src="js/index.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

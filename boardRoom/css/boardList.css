@@ -1,0 +1,42 @@
+
+/*新增会议室*/
+#addPerson{
+    margin: 3% auto;
+}
+#addPerson+p{
+    width: 80%;
+    margin-top: 7%;
+    margin-left:8%;
+}
+#addPerson tr>td:nth-of-type(1),#addPerson tr>td:nth-of-type(1){
+    text-align: right;
+}
+#addPerson tr>td input,#addPerson tr>td select{
+    width:100%;
+    margin:5px 0;
+}
+#addPerson tr>td{
+    border: 0;
+}
+/*.creatVote{*/
+    /*top:21%;*/
+    /*display: none;*/
+/*}*/
+/*.creatVote #creatVote-btn{*/
+    /*margin: 0 auto;*/
+/*}*/
+/*.creatVote #creatVote-btn button{*/
+  /*width:45%;*/
+    /*margin-top:5%;*/
+/*}*/
+
+#vote-button {
+    margin-top:15px;
+}
+#vote-button button {
+    width:72px;
+    font-size:12px;
+}
+#vote-button button:nth-of-type(3) {
+    float: right;
+}

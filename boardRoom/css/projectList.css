@@ -1,0 +1,52 @@
+
+.table-title{
+    color: #0a6999;
+    border-bottom:1px solid rgb(239,244,250);
+    background-color: white;
+    padding:10px;
+    margin-bottom:1%;
+    font-size:13px;
+}
+.table-title .rfloat>span:nth-of-type(1){
+    position: relative;
+    right:4%
+}
+.tableList{
+    width: 100%;
+    background-color: white;
+    margin:1% 0;
+    overflow: hidden;
+}
+.tableList table{
+    margin:5px auto;
+    border-radius: 5px;
+}
+.tableList table th {
+    color:#666;
+}
+.tableList table th,.tableList table td {
+    padding:10px;
+}
+td{
+    width: 50%;
+}
+.tableList tr>td:nth-of-type(2){
+    text-align: right;
+}
+.tableList tr>th:nth-of-type(2){
+    text-align: right;
+}
+.lastColor td{
+    color: red;
+}
+.noneBox{
+    height: 150px;
+}
+.table{
+    border-bottom:5px solid rgb(239,244,250);
+}
+.content {
+    background-color: white;
+}
+
+

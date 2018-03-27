@@ -1,0 +1,48 @@
+
+.content {
+    padding:0 15px;
+    height:calc(100% - 145px);
+    overflow: auto;
+}
+table{
+    width:100%;
+    background-color: white;
+    font-size:14px;
+}
+
+td,th{
+    border: 1px solid rgba(128, 128, 128, 0.12);
+    padding: 5px 10px;
+    font-size:13px;
+    color:#666;
+}
+th{
+    color: #0a6999;
+}
+#addPerson {
+    margin-top:10px;
+}
+#addPerson tr>td:nth-of-type(1){
+    text-align: right;
+}
+#addPerson tr>td input,#addPerson tr>td select{
+    width:90%;
+}
+#addPerson tr>td select {
+    width:90%;
+    height:30px;
+    border-radius: 30px;
+    text-indent: 10px;
+}
+#addPerson tr>td{
+    border: 0;
+}
+#addPerson+p {
+    margin-top:20px;
+}
+#post {
+    outline: none;
+}
+#post option {
+    font-size:14px;
+}

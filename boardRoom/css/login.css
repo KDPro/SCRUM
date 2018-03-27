@@ -1,0 +1,23 @@
+
+/*登录*/
+#loginBox {
+    display: block;
+}
+#loginBox input,#creatVote input {
+    width:100%;
+    margin:10px 0;
+}
+#loginBox table,#creatVote table {
+    width:90%;
+    margin:15px auto 0;
+}
+#loginBox #login-btn {
+    margin-top:10px;
+}
+#loginBox #login-btn button {
+    width:75px;
+    font-size:12px;
+}
+#creatVote {
+    display: none;
+}

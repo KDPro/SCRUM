@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/person.css">
+</head>
+<body>
+<!--底部导航-->
+<nav>
+    <ul class="footerNav">
+        <li>
+            <a href="index.html">
+                <img src="images/index.png" alt="">
+                <span>首页</span>
+            </a>
+        </li>
+        <li id="person">
+            <a href="javascript:;">
+                <img src="images/userA.png" alt="">
+                <span style="color:#0a6dca">人员</span>
+            </a>
+        </li>
+        <li id="project">
+            <a href="javascript:;">
+                <img src="images/pj.png" alt="">
+                <span>项目</span>
+            </a>
+        </li>
+        <li id="work">
+            <a href="javascript:;">
+                <img src="images/TV.png" alt="">
+                <span>会议室</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!--头部按钮-->
+<div class="topButton">
+    <div class="topButton-btn rfloat" >
+        <button class="topbutton rfloat" id="ccreat">创建人员</button>
+    </div>
+</div>
+
+<p>人员列表</p>
+
+<!--下面列表-->
+<div class="content">
+
+    <table cellpadding="0" cellspacing="0">
+    <thead>
+       <tr>
+           <th>姓名</th>
+           <th>电话</th>
+           <th>邮箱</th>
+       </tr>
+    </thead>
+    <tbody class="list">
+      <!-- <tr>
+           <td>张三</td>
+           <td>13909876543</td>
+           <td>13909876543@qq.com</td>
+       </tr>-->
+    </tbody>
+</table>
+</div>
+
+
+<!--隐藏的评估投票的模态框-->
+<!--遮罩层-->
+<div class="opcaty">
+    <div class="vote">
+        <p class="vote-title">创建人员</p>
+
+        <table id="addPerson">
+            <tr>
+                <td>用户名 <span class="heart">*</span>：</td>
+                <td><input type="text" placeholder="请输入用户名" id="usernamew"></td>
+            </tr>
+            <tr>
+                <td>姓名：</td>
+                <td><input type="text" placeholder="请输入姓名" id="name"></td>
+            </tr>
+            <tr>
+                <td>电话：</td>
+                <td><input type="text" placeholder="请输入电话" id="telephone"></td>
+            </tr>
+            <tr>
+                <td>邮箱：</td>
+                <td><input type="text" placeholder="请输入邮箱" id="email"></td>
+            </tr>
+            <tr>
+                <td>岗位：</td>
+                <td>
+                    <select name=""  id="post" >
+                        <option value="0">员工</option>
+                        <option value="1">项目经理</option>
+                        <option value="2">管理员</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+        <p><button class="buttonS">确定</button><button class="rfloat buttonB">取消</button></p>
+    </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/serverPath.js"></script>
+<script src="js/person.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
